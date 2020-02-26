@@ -1,0 +1,58 @@
+export const Products = [
+    {
+        name: 'Double siège',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    },
+    {
+        name: 'Plateforme VR',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    },
+    {
+        name: 'Robot',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    },
+    {
+        name: 'Simulateur de vol',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    },
+    {
+        name: 'Vortuix Omni',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    },
+    {
+        name: 'Wingsuit',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    },
+    {
+        name: 'Xtrematic',
+        price: '100',
+        duration: '5',
+        numberOfPlayers: '1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        image: './assets/img/vignettesGames/',
+    }
+];
