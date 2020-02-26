@@ -44,7 +44,7 @@ class Presentation extends Component {
                     </div>
 
                     <div
-                        className={"position-absolute fixed-bottom text-center"}
+                        className={"presentationContainImage text-center"}
                         data-aos="fade-up"
                     >
                         <img
