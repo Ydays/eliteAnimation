@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 class Presentation extends Component {
     render() {
         return (
-            <div className={"main-content h-100 vw-100"}>
             <div
                 id="presentation"
                 className={"container-fluid position-relative h-100"}
@@ -53,7 +52,6 @@ class Presentation extends Component {
                         />
                     </div>
                 </div>
-            </div>
             </div>
         )
     }

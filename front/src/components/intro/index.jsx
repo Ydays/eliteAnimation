@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Intro extends Component {
     render() {
         return (
-            <div className={"main-content vh-100 vw-100"}>
                 <div id="home" className={"container-fluid position-relative h-100"}>
                     <div className={"particles-js"}> </div>
                     <div
@@ -40,7 +39,6 @@ class Intro extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
         )
     }
 }

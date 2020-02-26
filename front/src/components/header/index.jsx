@@ -3,31 +3,36 @@ import React, { Component } from "react";
 class Header extends Component {
     render() {
         return (
-        <div class="navbar">
-            <div class="navbarLogo">
-                <img src="" alt=""/>
+        <div className={"navbar"}>
+            <div className="navbarLogo">
+                <img className="logoImg" src="assets/img/logo192.png" alt=""/>
+            </div>
+            <div className="burgerMenu">
+                <div className="bar bar1"></div> 
+                <div className="bar bar2"></div>
+                <div className="bar bar3"></div>   
             </div>    
-        <div className={"navbarItem"}>
-            <a className={"nav-link active"} href="#home">
-                ACCUEIL <span className={"sr-only"}>(current)</span>
-            </a>
+            <div className={"navbarItems"}>
+                <a className={"nav-link"} href="#home">
+                    ACCUEIL <span className={"sr-only"}>(current)</span>
+                </a>
 
-            <a className={"nav-link"} href="#presentation">
-                PRESENTATION
-            </a>
+                <a className={"nav-link"} href="#presentation">
+                    PRESENTATION
+                </a>
 
-            <a className={"nav-link"} href="#vr-games">
-                JEUX VR
-            </a>
+                <a className={"nav-link"} href="#vr-games">
+                    JEUX VR
+                </a>
 
-            <a className={"nav-link"} href="#contact">
-                CONTACT
-            </a>
+                <a className={"nav-link"} href="#contact">
+                    CONTACT
+                </a>
 
-            <a className={"nav-link"} href="#want-more">
-                ENVIE DE PLUS ?
-            </a>
-        </div>
+                <a className={"nav-link"} href="#want-more">
+                    ENVIE DE PLUS ?
+                </a>
+            </div>
         </div>
         );
     }

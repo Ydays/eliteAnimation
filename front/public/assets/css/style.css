@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #22223b;
+    height: 100px;
+}
+
+.navbarLogo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg {
+    width: 80px;
+}
+
+.navbarItems {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    color: #f7f7f7;
+    text-decoration: none;
+    letter-spacing: 1;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+
+/* ---- particles.js container ---- */
+#home,
+#vr-games,
+#want-more,
+#presentation,
+#contact {
+    background-image: url("../img/bg_accueil.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.vr-game {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.vr-game:hover {
+    padding: 0px !important;
+}
