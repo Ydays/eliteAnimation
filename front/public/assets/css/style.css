@@ -248,6 +248,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width:426px) and (max-width:768px) {
+    #presentation {
+        height: 70vh;
+    }
+    .containPresentation {
+        height: 70vh;
+    }
+
     .containInfo {
         height: 60%;
     }
