@@ -1,116 +1,5 @@
-var config = {
-    "particles": {
-        "number": {
-            "value": 160,
-            "density": { "enable": true, "value_area": 800 }
-        },
-        "color": {
-            "value": "#ffffff"
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#000000"
-            },
-            "polygon": {
-                "nb_sides": 5
-            },
-            "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-            }
-        },
-        "opacity": {
-            "value": 1,
-            "random": true,
-            "anim": {
-                "enable": true,
-                "speed": 1,
-                "opacity_min": 0,
-                "sync": false
-            }
-        },
-        "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 4,
-                "size_min": 0.3,
-                "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": false,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 1,
-            "direction": "none",
-            "random": true,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 600
-            }
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "bubble"
-            },
-            "onclick": {
-                "enable": true,
-                "mode": "repulse"
-            },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-                "distance": 400,
-                "line_linked": {
-                    "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 250,
-                "size": 0,
-                "duration": 2,
-                "opacity": 0,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 400,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-        }
-    },
-    "retina_detect": true
-};
 
 $(function() {
-    $('.particles-js').each(function(e) {
-        $(this).attr('id', 'particle-' + e)
-        particlesJS('particle-' + e, config);
-    });
 
     $('.nav-link, .navbar-brand').click(function() {
         var sectionTo = $(this).attr('href');
@@ -145,3 +34,31 @@ $(function() {
 
     });
 });
+
+
+
+// c'est triste mais bon on va coder la
+
+window.addEventListener("load", () => {   
+    let burgerContainer = document.querySelector('.burgerMenu');
+    let navbarItems = document.querySelector('.navbarItems');
+    let bar1 = document.querySelector('.bar1');
+    let bar2 = document.querySelector('.bar2');
+    let bar3 = document.querySelector('.bar3');
+    burgerContainer.addEventListener('click', () => {
+        if (!navbarItems.style.transform || navbarItems.style.transform == "translateY(-100%)") {
+            navbarItems.style.transform = "translateY(89px)";
+            bar2.style.transform = "translateX(100%)";
+            bar2.style.opacity = 0;
+            bar1.style.transform = "rotate(45deg)";
+            bar3.style.transform = "rotate(-45deg)";
+        } else {
+            navbarItems.style.transform = "translateY(-100%)";
+            bar2.style.transform = "translateX(0%)";
+            bar2.style.opacity = 1;
+            bar1.style.transform = "rotate(0)";
+            bar3.style.transform = "rotate(0)";
+        }
+    })
+});
+

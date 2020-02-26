@@ -6,15 +6,10 @@ class Header extends Component {
         <div className={"navbar"}>
             <div className="navbarLogo">
                 <img className="logoImg" src="assets/img/logo192.png" alt=""/>
-            </div>
-            <div className="burgerMenu">
-                <div className="bar bar1"></div> 
-                <div className="bar bar2"></div>
-                <div className="bar bar3"></div>   
-            </div>    
+            </div> 
             <div className={"navbarItems"}>
-                <a className={"nav-link"} href="#home">
-                    ACCUEIL <span className={"sr-only"}>(current)</span>
+                <a className={"nav-link active"} href="#home">
+                    ACCUEIL
                 </a>
 
                 <a className={"nav-link"} href="#presentation">
@@ -32,6 +27,13 @@ class Header extends Component {
                 <a className={"nav-link"} href="#want-more">
                     ENVIE DE PLUS ?
                 </a>
+            </div>
+            <div className="burgerMenu">
+                <div className="containMenu">
+                    <div className="bar bar1"></div> 
+                    <div className="bar bar2"></div>
+                    <div className="bar bar3"></div>   
+                </div>   
             </div>
         </div>
         );

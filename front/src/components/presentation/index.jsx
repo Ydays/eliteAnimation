@@ -6,52 +6,41 @@ class Presentation extends Component {
         return (
             <div
                 id="presentation"
-                className={"container-fluid position-relative h-100"}
+                className={"h-100"}
             >
-                <div className={"particles-js"}> </div>
-                <div className={"row h-50 py-md-5"}>
-                    <div className={"col-md-4 p-md-5"} data-aos="fade-down">
-                        <h1>POURQUOI ?</h1>
-                        Pour vos évènements festifs comme des cocktails, mariages,
-                        anniversaires, séminaires, festivals, foires, salons, portes
-                        ouvertes ...
+                <div className={"containPresentation h-100"}>
+                    <div class="containInfo">
+                        <div className={"cardPresentation card1"} data-aos="fade-down">
+                            <h2>POURQUOI ?</h2>
+                            Pour vos évènements festifs comme des cocktails, mariages,
+                            anniversaires, séminaires, festivals, foires, salons, portes
+                            ouvertes ...
+                        </div>
+                        <div className={"cardPresentation card2"} data-aos="fade-down">
+                            <h2>POURQUOI NOUS ?</h2>
+                            Pour vos évènements festifs comme des cocktails, mariages,
+                            anniversaires, séminaires, festivals, foires, salons, portes
+                            ouvertes ...
+                        </div>
+                        <div className={"cardPresentation card3"} data-aos="fade-down">
+                            <h2>POUR QUI ?</h2>
+                            Pour les comités d'entreprises. les BDE, les centres commerciaux,
+                            les structures institutionnelles, les comités des fêtes, les
+                            professionnels ...
+                        </div>
+                        <div className={"cardPresentation card4"} data-aos="fade-down">
+                            <h2>NOS ENGAGEMENTS</h2>
+                            Pour les comités d'entreprises. les BDE, les centres commerciaux,
+                            les structures institutionnelles, les comités des fêtes, les
+                            professionnels ...
+                        </div>
                     </div>
-                    <div className={"col-md-4"}></div>
-                    <div className={"col-md-4 p-md-5"} data-aos="fade-down">
-                        <h1>POURQUOI NOUS ?</h1>
-                        Pour vos évènements festifs comme des cocktails, mariages,
-                        anniversaires, séminaires, festivals, foires, salons, portes
-                        ouvertes ...
-                    </div>
-                </div>
-
-                <div className={"row h-50"}>
-                    <div className={"col-md-3 p-md-5"} data-aos="fade-down">
-                        <h1>POUR QUI ?</h1>
-                        Pour les comités d'entreprises. les BDE, les centres commerciaux,
-                        les structures institutionnelles, les comités des fêtes, les
-                        professionnels ...
-                    </div>
-                    <div className={"col-md-3"}></div>
-                    <div className={"col-md-3"}></div>
-
-                    <div className={"col-md-3 p-md-5"} data-aos="fade-down">
-                        <h1>NOS ENGAGEMENTS</h1>
-                        Pour les comités d'entreprises. les BDE, les centres commerciaux,
-                        les structures institutionnelles, les comités des fêtes, les
-                        professionnels ...
-                    </div>
-
-                    <div
-                        className={"presentationContainImage text-center"}
-                        data-aos="fade-up"
-                    >
                         <img
-                            className={"img-banner img-fluid"}
+                            className={"imgPresentationBottom"}
                             src="assets/img/homme_presentation.png"
+                            data-aos="fade-up"
                         />
                     </div>
-                </div>
             </div>
         )
     }
