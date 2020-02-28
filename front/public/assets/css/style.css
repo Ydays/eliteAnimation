@@ -348,11 +348,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .dumbDiv {
     flex: 1;
+    background-color: blue;
 }
 
 .content {
     display: grid;
     flex: 2;
+    grid-template-rows: 30% 70%;
+}
+
+.presentationTitle {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.productContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+/* ---- Card Product ---- */
+
+.cardContainer {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    height: 30%;
+    width: 75%;
+    background-color: red;
+}
+
+.topCard {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottomCard img {
+    width: 100%;
+}
+
+.cardTitle {
+    font-size: 1.5em;
+    color: white;
 }
 
 /* ---- Footer ---- */

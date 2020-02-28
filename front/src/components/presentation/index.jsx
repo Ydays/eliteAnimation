@@ -9,7 +9,7 @@ class Presentation extends Component {
                 className={"h-100"}
             >
                 <div className={"containPresentation h-100"}>
-                    <div class="containInfo">
+                    <div className="containInfo">
                         <div className={"cardPresentation card1"} data-aos="fade-down">
                             <h2>POURQUOI ?</h2>
                             Pour vos évènements festifs comme des cocktails, mariages,
