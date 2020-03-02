@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .content {
     display: grid;
     flex: 2;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 20% 80%;
 }
 
 .presentationTitle {
@@ -364,34 +364,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .productContainer {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
     justify-items: center;
 }
 
 /* ---- Card Product ---- */
 
 .cardContainer {
-    display: grid;
-    grid-template-rows: 30% 70%;
-    height: 30%;
-    width: 75%;
-    background-color: red;
+    padding: 0 10px;
 }
 
 .topCard {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    background-color: #4a4e69;
 }
 
-.bottomCard img {
+img {
     width: 100%;
 }
 
 .cardTitle {
-    font-size: 1.5em;
     color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-block-start: inherit;
+    margin-block-end: inherit;
+    padding: 2.5px;
 }
 
 /* ---- Footer ---- */

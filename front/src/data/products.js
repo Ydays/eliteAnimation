@@ -5,7 +5,7 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/double_sits_1.jpg',
     },
     {
         name: 'Plateforme VR',
@@ -13,7 +13,7 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/VR_Plateforme_1.jpg',
     },
     {
         name: 'Robot',
@@ -21,7 +21,7 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/Robot_1.jpg',
     },
     {
         name: 'Simulateur de vol',
@@ -29,7 +29,7 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/Fly_Simulator.jpg',
     },
     {
         name: 'Vortuix Omni',
@@ -37,7 +37,7 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/Virtuix_omi.jpg',
     },
     {
         name: 'Wingsuit',
@@ -45,7 +45,7 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/Wingsuit.png',
     },
     {
         name: 'Xtrematic',
@@ -53,6 +53,6 @@ export const Products = [
         duration: '5',
         numberOfPlayers: '1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
-        image: './assets/img/vignettesGames/',
+        imageURL: 'assets/img/vignettesGames/Xtrematic.jpg',
     }
 ];

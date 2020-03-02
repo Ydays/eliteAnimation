@@ -36,9 +36,6 @@ $(function() {
 });
 
 
-
-// c'est triste mais bon on va coder la
-
 window.addEventListener("load", () => {   
     let burgerContainer = document.querySelector('.burgerMenu');
     let navbarItems = document.querySelector('.navbarItems');
@@ -62,3 +59,13 @@ window.addEventListener("load", () => {
     })
 });
 
+
+////////////
+
+/* let grid =  document.getElementsByClassName('cardContainer');
+
+Object.keys(grid).forEach((key) => {
+    grid[key].addEventListener("click", () => {
+        console.log(grid[key].getAttribute('key'));
+    });
+}); */
