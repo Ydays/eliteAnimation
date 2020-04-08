@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cors());
 
-app.post('/', (req, res) => {
+app.post('/form', (req, res) => {
     console.log(req.body);
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
@@ -33,7 +33,7 @@ app.post('/', (req, res) => {
         }
         transporter.sendMail(mailOptions, (err, info) => {
             if (err) return console.log(err);
-            else console.log('---------- Email Send ----------');
+            else res.send("----- Email Send ! -------");
         })
     })
 });

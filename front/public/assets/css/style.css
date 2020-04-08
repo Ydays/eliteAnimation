@@ -169,7 +169,9 @@ h1, h2, h3, h4, h5, h6 {
 #vr-games,
 #want-more,
 #presentation,
-#contact {
+#contact,
+#footer,
+#vr-games {
     background-image: url("../img/bg_accueil.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -187,7 +189,185 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px !important;
 }
 
+/* Slider */
+.cross {
+    cursor: pointer;
+    position: relative;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+.dumbDiv img {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+.first {
+    top: 10px;
+    transform: rotate(45deg)
+}
+
+.second {
+    transform: rotate(-45deg)
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    z-index: 10000;
+}
+
+.sliderCross {
+    height: 40px;
+    margin-left: 90%;
+    width: 40px;
+}
+
+.slider img {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.slider p, h2 {
+    color: white;
+}
+
+.sliderImg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.sliderDescription {
+    flex: 1;
+    display: grid;    
+    grid-template-rows: 10% 15% 40% 20% 15%;
+    padding: 3rem;
+}
+
+.sliderDescription .sliderTitle {
+    font-size: 2rem;
+}
+
+.sliderDescription .sliderIntro {
+    font-size: 1.4rem;
+}
+
+.sliderDescription .sliderPrice {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sliderDescription img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.sliderPrice p {
+    text-align: center;
+}
+
+.sliderDescription button {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #22223b;
+    padding: 1rem 3.5rem;
+    border-radius: 40px;
+    font-weight: 900;
+}
+
+.arrows {
+    width: 30px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+ 
+.prev {
+   border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(45deg);
+    left: 13px;
+}
+    
+.next {
+   border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(-135deg);
+    right: 13px;
+}
+ 
+
 @media screen and (max-width:425px) {
+    #footer {
+        grid-template-rows: repeat(4,25%) !important;
+        font-size: 2rem !important;
+    }
+    .sliderImg {
+        display: none;
+    }
+    .sliderDescription .sliderTitle {
+        font-size: 1.7rem;
+    }
+    .sliderDescription .sliderPrice {
+        font-size: 1.1rem;
+    }
+    .sliderDescription .sliderIntro {
+        font-size: 1.1rem;
+    }
+    .content .productContainer {
+        grid-column-gap: 0px;
+    }
+    .formFirstPart .formContactInput {
+        height: 1.5rem;
+    }
+    .formSecondPart .formContactInput {
+        height: 3rem;
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    .dumbDiv {
+        display: none;
+    }
+    .formContactGlobal img {
+        display: none;
+    }
+    .formContactGlobal .formContact {
+        grid-template-columns: 1fr;
+    }
+    .content .productContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .topCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardContainer .topCard {
+        height: 50px;
+    }
+    .topCard p {
+        font-size: 1.1rem;
+    }
     .navbar {
         justify-content: space-between;
     }
@@ -247,11 +427,34 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* tablette */
 @media screen and (min-width:426px) and (max-width:768px) {
     .containInfo {
         height: 60%;
     }
-
+    .sliderCross {
+        margin-left: 88%;
+    }
+    .sliderImg img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .sliderDescription .sliderTitle {
+        font-size: 1.7rem;
+    }
+   .sliderDescription .sliderIntro {
+        font-size: 1.2rem;
+    }
+    .sliderDescription .sliderPrice {
+        font-size: 1rem;
+    } 
+    .sliderDescription {
+        grid-template-rows: 10% 12% 50% 20% 15%;
+    }
+    .sliderImg {
+        padding-left: 1rem;
+    }
     .imgPresentationBottom {
         width: 70%;
     }
@@ -278,6 +481,56 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 175px;
         width: 50%;
     }
+
+    .cardContainer .topCard {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cardContainer img {
+        height: 9rem;
+    }
+
+    .dumbDiv {
+        display: none;
+    }
+
+    .content {
+        margin-top: 4rem;
+    }
+
+    .h-100 {
+        height: inherit;
+    }
+
+    .content .productContainer {
+        grid-column-gap: 5px;
+    }
+
+    .formFirstPart input {
+        width: 17rem; 
+    }
+
+    .formContactGlobal img {
+        display: none;
+    }
+
+    .formSecondPart .formContactInput {
+        width: 82%;
+    }
+
+    .topCard .cardTitle {
+        font-size: 1.2rem;
+    }
+
+    #footer {
+    grid-template-rows: 20% 20% 20% 20% !important;
+    font-size: 3.4em !important;
+    }
+
+    
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -315,8 +568,10 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 140px;
         margin-left: 225px;
     }
+    
+    
 }
-
+/* Format tablette */
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .card1 {
         margin-top: 125px;
@@ -344,14 +599,16 @@ h1, h2, h3, h4, h5, h6 {
 .vrGameContainer {
     display: flex;
     height: 100vh;
+    width: 100%;
 }
 
 .dumbDiv {
     flex: 1;
-    background-color: blue;
 }
 
 .content {
+    position: relative;
+    z-index: 100;
     display: grid;
     flex: 2;
     grid-template-rows: 20% 80%;
@@ -372,8 +629,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---- Card Product ---- */
 
+.topCard, .topCard img {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 .cardContainer {
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .topCard {
@@ -394,9 +656,13 @@ img {
 }
 
 /* ---- Footer ---- */
-#Footer {
-    font-size: 30px;
-    height: 200px;
+#footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: white;
+    font-size: 4rem;
+    height: 100%;
+    text-align: center;
 }
 
 /* ---- Form contact ---- */
@@ -437,6 +703,8 @@ input {
 }
 
 .formContact {
+    position: relative;
+    z-index: 1000;
     display: grid;
     grid-template-columns: 45% 55%;
     padding-left: 7%;
@@ -461,6 +729,7 @@ input {
 
 .formContactGlobal img {
     position: absolute;
+    z-index: 0;
     right: 0;
     height: 100%;
 }

@@ -5,13 +5,13 @@ export const CardProduct = (props) => {
     //console.log(props.products);
 
     const handleClick = (index) => {
-        console.log(index);
+        //console.log(index);
     };
 
     return (
         props.products.map((product, index) => {
             return (
-                <div className="cardContainer" onClick={() => handleClick(index)}  key={index.toString()}>
+                <div className="cardContainer" onClick={() => handleClick(index)} id={index}  key={index}>
                     <div className="topCard">
                         <p className="cardTitle">{product.name}</p>
                     </div>

@@ -5,7 +5,10 @@ export default function FormContact() {
 
     const [formValue, setFormValue] = useState({
        name :'',
+       zipCode: '',
        email: '',
+       phoneNumber: '',
+       eventDate: '',
        message: ''
     });
 
@@ -13,7 +16,10 @@ export default function FormContact() {
         setFormValue({
             name :'',
             email: '',
-            message: ''
+            message: '',
+            zipCode: '',
+            phoneNumber: '',
+            eventDate: ''
         })
     };
 
@@ -23,14 +29,18 @@ export default function FormContact() {
             [event.target.name]: event.target.value
         });
 
-    const { name, email, message } = formValue;
+    const { name, zipCode, email, phoneNumber, eventDate, message } = formValue;
 
     const onSubmit = (event) => {
-        event.preventDefault();
-
-        axios.post('http://localhost:3001/', {
+        console.log('onSubmit', event);
+        console.log('Name:', name);
+        event.preventDefault(); 
+        axios.post('http://localhost:3001/form', {
             name,
+            zipCode,
             email,
+            phoneNumber,
+            eventDate,
             message
         }).then(function (response) {
             console.log('Request done for sending mail', response);
@@ -42,37 +52,68 @@ export default function FormContact() {
         alert('Email envoyé !');
     };
 
-
         return (
             <div id="contact" className="formContactGlobal">
-
                     <p>APPELEZ-NOUS</p>
-
-
-                <div className="formContact">
+                <form className="formContact" method="POST">
                     <div className="formFirstPart">
                         <label>Nom :</label>
-                        <input className="formContactInput" type="text" name="lastName"/>
+                        <input
+                        className="formContactInput"
+                        onChange={e => updateFormData(e)}
+                        value={name}
+                        type="text"
+                        name="name"
+                        />
 
                         <label>Code postale :</label>
-                        <input className="formContactInput" type="text" name="zipCode"/>
+                        <input 
+                        className="formContactInput" 
+                        onChange={e => updateFormData(e)} 
+                        value={zipCode} 
+                        type="text" 
+                        name="zipCode"
+                        />
 
                         <label>Email :</label>
-                        <input className="formContactInput" type="text" name="email"/>
+                        <input 
+                        className="formContactInput" 
+                        onChange={e => updateFormData(e)} 
+                        value={email} 
+                        type="text" 
+                        name="email"
+                        />
 
                         <label>Téléphone :</label>
-                        <input className="formContactInput" type="text" name="phoneNumber"/>
+                        <input 
+                        className="formContactInput" 
+                        onChange={e => updateFormData(e)} 
+                        value={phoneNumber} 
+                        type="text" 
+                        name="phoneNumber"
+                        />
 
                         <label>Date(s) de l'évènement :</label>
-                        <input className="formContactInput" type="text" name="eventDate"/>
+                        <input 
+                        className="formContactInput" 
+                        onChange={e => updateFormData(e)} 
+                        value={eventDate} 
+                        type="text" 
+                        name="eventDate"
+                        />
                     </div>
                     <div className="formSecondPart">
                         <label>Message :</label>
-                        <input className="formContactInput" type="textarea" name="message"/>
-                        <button type='submit'>ENVOYER</button>
-
+                        <input 
+                        className="formContactInput" 
+                        onChange={e => updateFormData(e)} 
+                        value={message}
+                        type="textarea"
+                        name="message"
+                        />
+                        <button type='submit' onClick={onSubmit}>ENVOYER</button>
                     </div>
-                </div>
+                </form>
                 <img src="assets/img/perso_ligne_femme.png" alt='perso_vr' />
             </div>
         )

@@ -4,7 +4,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/double_sits_1.jpg',
     },
     {
@@ -12,7 +12,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/VR_Plateforme_1.jpg',
     },
     {
@@ -20,7 +20,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/Robot_1.jpg',
     },
     {
@@ -28,7 +28,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/Fly_Simulator.jpg',
     },
     {
@@ -36,7 +36,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/Virtuix_omi.jpg',
     },
     {
@@ -44,7 +44,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/Wingsuit.png',
     },
     {
@@ -52,7 +52,7 @@ export const Products = [
         price: '100',
         duration: '5',
         numberOfPlayers: '1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id. Suspendisse interdum elementum metus. Sed ac urna vulputate, condimentum lorem sit amet, sodales magna.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum enim at elit vehicula, id convallis nisl aliquet. Integer interdum aliquam facilisis. In hac habitasse platea dictumst. Nullam ornare convallis nulla, non tincidunt ligula vehicula et. Phasellus tincidunt lacinia ante eget tempus. Phasellus lacinia risus at turpis luctus, sit amet porttitor quam rhoncus. Duis efficitur quam metus, quis tincidunt purus pulvinar id.',
         imageURL: 'assets/img/vignettesGames/Xtrematic.jpg',
     }
 ];

@@ -1,8 +1,8 @@
-
+// ---------------- letIABLES ---------------- //
 $(function() {
 
     $('.nav-link, .navbar-brand').click(function() {
-        var sectionTo = $(this).attr('href');
+        let sectionTo = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(sectionTo).offset().top
         }, 1000);
@@ -36,12 +36,55 @@ $(function() {
 });
 
 
-window.addEventListener("load", () => {   
+/////////////////////////////////////////////////////////////////////////////////
+///////////////////////// MENU BURGER ///////////////////////////////////////////
+window.addEventListener("load", () => {
     let burgerContainer = document.querySelector('.burgerMenu');
     let navbarItems = document.querySelector('.navbarItems');
     let bar1 = document.querySelector('.bar1');
     let bar2 = document.querySelector('.bar2');
     let bar3 = document.querySelector('.bar3');
+    let cards = document.getElementsByClassName('cardContainer');
+    let leftArrows = document.getElementsByClassName('prev');
+    let rightArrows = document.getElementsByClassName('next');
+    let slider = document.getElementsByClassName('slider');
+    let cross = document.getElementsByClassName('sliderCross');
+    let slideIndex;
+
+    /**** Script Slider ****/
+
+    function showSlide () {
+        let id = parseInt(this.getAttribute("id"));
+        slideIndex = id;
+        slider[slideIndex].style.display = "flex";
+        document.documentElement.style.overflow = 'hidden';
+    };
+    function leftArrowFunction () {
+        slider[slideIndex].style.display = "none";
+        slideIndex -= 1;
+        if (slideIndex === - 1) slideIndex = slider.length - 1;
+        slider[slideIndex].style.display = "flex";
+    };
+    function rightArrowFunction () {
+        slider[slideIndex].style.display = "none";
+        slideIndex += 1;
+        if (slideIndex === slider.length) slideIndex = 0;
+        slider[slideIndex].style.display = "flex";
+    };
+    // Event on cross for closed slider.
+    function closeSlider() {
+        slider[slideIndex].style.display = "none";
+        document.documentElement.style.overflow = 'auto';
+    }
+
+    for (let i = 0; i < cards.length; i++) {
+        cross[i].addEventListener('click', closeSlider, false);
+        cards[i].addEventListener('click', showSlide, false);
+        leftArrows[i].addEventListener('click', leftArrowFunction, false);
+        rightArrows[i].addEventListener('click', rightArrowFunction, false);
+    }
+
+    /* -------- Menu Burger ------- */
     burgerContainer.addEventListener('click', () => {
         if (!navbarItems.style.transform || navbarItems.style.transform == "translateY(-100%)") {
             navbarItems.style.transform = "translateY(89px)";
@@ -56,16 +99,5 @@ window.addEventListener("load", () => {
             bar1.style.transform = "rotate(0)";
             bar3.style.transform = "rotate(0)";
         }
-    })
-});
-
-
-////////////
-
-/* let grid =  document.getElementsByClassName('cardContainer');
-
-Object.keys(grid).forEach((key) => {
-    grid[key].addEventListener("click", () => {
-        console.log(grid[key].getAttribute('key'));
     });
-}); */
+});

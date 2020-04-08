@@ -5,7 +5,7 @@ class Header extends Component {
         return (
         <div className={"navbar"}>
             <div className="navbarLogo">
-                <img className="logoImg" src="assets/img/logo192.png" alt=""/>
+                <img className="logoImg" src="assets/img/logo-elite-animation.png" alt=""/>
             </div> 
             <div className={"navbarItems"}>
                 <a className={"nav-link active"} href="#home">
@@ -24,7 +24,7 @@ class Header extends Component {
                     CONTACT
                 </a>
 
-                <a className={"nav-link"} href="#want-more">
+                <a className={"nav-link"} href="#footer">
                     ENVIE DE PLUS ?
                 </a>
             </div>
