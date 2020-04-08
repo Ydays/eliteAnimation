@@ -100,7 +100,7 @@ export default function FormContact() {
                         value={eventDate} 
                         type="text" 
                         name="eventDate"
-                        />
+                        />  
                     </div>
                     <div className="formSecondPart">
                         <label>Message :</label>
