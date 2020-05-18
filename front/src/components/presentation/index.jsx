@@ -37,7 +37,7 @@ class Presentation extends Component {
                     </div>
                         <img
                             className={"imgPresentationBottom"}
-                            src="assets/img/homme_presentation.png"
+                            src="assets/img/casque-presentation.png"
                             data-aos="fade-up"
                         />
                     </div>

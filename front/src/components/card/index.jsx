@@ -13,7 +13,7 @@ export const CardProduct = (props) => {
             return (
                 <div className="cardContainer" onClick={() => handleClick(index)} id={index}  key={index}>
                     <div className="topCard">
-                        <p className="cardTitle">{product.name}</p>
+                        <p className="cardTitle">{product.name.toUpperCase()}</p>
                     </div>
                         <img src={product.imageURL} alt="Fly Simulator" />
                 </div>

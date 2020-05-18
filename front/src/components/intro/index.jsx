@@ -15,9 +15,7 @@ class Intro extends Component {
                                 ENVIE DE TESTER LA <br></br> REALITE VIRTUELLE ?
                             </h1>
 
-                            <div className={"buttonWhite"}>
-                                IMMERSION
-                            </div>
+                        <a href='#vr-games'><button type="button" className="buttonWhite">Immersion</button></a>
                         </div>
                         <img
                             className={"imgHomeBottom"}

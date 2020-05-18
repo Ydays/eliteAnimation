@@ -49,6 +49,7 @@ window.addEventListener("load", () => {
     let rightArrows = document.getElementsByClassName('next');
     let slider = document.getElementsByClassName('slider');
     let cross = document.getElementsByClassName('sliderCross');
+    let buttonSlider = document.getElementsByClassName('sliderButtonOnClick');
     let slideIndex;
 
     /**** Script Slider ****/
@@ -78,6 +79,7 @@ window.addEventListener("load", () => {
     }
 
     for (let i = 0; i < cards.length; i++) {
+        buttonSlider[i].addEventListener('click', closeSlider, false);
         cross[i].addEventListener('click', closeSlider, false);
         cards[i].addEventListener('click', showSlide, false);
         leftArrows[i].addEventListener('click', leftArrowFunction, false);

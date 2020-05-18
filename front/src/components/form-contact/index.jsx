@@ -54,7 +54,7 @@ export default function FormContact() {
 
         return (
             <div id="contact" className="formContactGlobal">
-                    <p>APPELEZ-NOUS</p>
+                    <p className="titleFormContact">APPELEZ-NOUS</p>
                 <form className="formContact" method="POST">
                     <div className="formFirstPart">
                         <label>Nom :</label>
@@ -112,6 +112,12 @@ export default function FormContact() {
                         name="message"
                         />
                         <button type='submit' onClick={onSubmit}>ENVOYER</button>
+                        <div className="line firstLine"></div>
+                            <p className="lineText">ELITE ANIMATION</p>
+                            <p className="lineText">8 chemin du maouré - 31770 Colomiers</p>
+                            <p className="lineText">06 86 58 13 08</p>
+                            <p className="lineText">patrick.sufu@sfr.fr</p>
+                        <div className="line"></div>
                     </div>
                 </form>
                 <img src="assets/img/perso_ligne_femme.png" alt='perso_vr' />

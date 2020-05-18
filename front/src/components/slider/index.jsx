@@ -27,16 +27,16 @@ export const Slider = (props) => {
                                 <p>{product.duration}mn / partie</p>
                             </div>
                             <div className="price">
-                                <img src="assets/img/sliderIcons/clock.svg" alt='icon prix' />
-                                <p>{product.price}e / heure</p>
+                                <img src="assets/img/sliderIcons/location.svg" alt='icon de localisation' />
+                                <p>{product.location}</p>
                             </div>
                             <div className="numberOfPlayers">
-                                <img src="assets/img/sliderIcons/clock.svg" alt='icon nombre de joueurs' />
-                                <p>{product.numberOfPlayers} joueur</p>
+                                <img src="assets/img/sliderIcons/electronics.svg" alt='icon ampérage' />
+                                <p>{product.electricity}</p>
                             </div>
                         </div>
                         <div className="sliderButton">
-                            <button>DEMANDE UN DEVIS</button>
+                            <a href='#contact'><button className="sliderButtonOnClick">DEMANDE UN DEVIS</button></a>
                         </div>
                     </div>
                 </div>
